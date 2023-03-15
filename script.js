@@ -14,3 +14,14 @@ const createGrid = (rows, boxes) => {
 };
 
 createGrid(16, 16);
+
+const boxes = document.querySelectorAll("div.box");
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener("mouseover", (e) => e.target.classList.add("coloured"));
+}
+
+const resetButton = document.getElementById("reset");
+const gridSizeButton = document.getElementById("gridSize");
+
+resetButton.addEventListener("click"); //finish this, not working, script has error cause of this
+gridSizeButton.addEventListener("click", createGrid(3, 3));

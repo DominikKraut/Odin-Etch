@@ -22,3 +22,13 @@ body {
   background-color: aquamarine;
   transition: 0.1s;
 }
+
+.coloured {
+  background-color: blue;
+}
+
+.controls {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
